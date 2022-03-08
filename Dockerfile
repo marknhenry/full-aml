@@ -24,5 +24,7 @@ RUN apt-get update  \
 # RUN conda install -y tensorflow keras pydot matplotlib autopep8 ipykernel beautifulsoup4 lxml pillow \
 #  && conda clean -a
 
-RUN pip install raiwidgets \
-  && pip install --upgrade pandas
+# RUN pip install raiwidgets \
+#   && pip install --upgrade pandas
+
+# RUN git clone https://github.com/microsoft/responsible-ai-toolbox.git
