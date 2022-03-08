@@ -8,7 +8,7 @@ RUN apt-get update  \
     && apt-get install -yq tzdata \
     && ln -fs /usr/share/zoneinfo/Asia/Dubai /etc/localtime \
     && dpkg-reconfigure -f noninteractive tzdata \
-    && apt-get install -y wget graphviz libgraphviz-dev unzip git build-essential sudo \
+    && apt-get install -y wget unzip git  \
     && rm -rf /var/lib/apt/lists/*
 
 # RUN wget \
@@ -24,5 +24,5 @@ RUN apt-get update  \
 # RUN conda install -y tensorflow keras pydot matplotlib autopep8 ipykernel beautifulsoup4 lxml pillow \
 #  && conda clean -a
 
-# RUN pip install raiwidgets \
-#   && pip install --upgrade pandas
+RUN pip install raiwidgets \
+  && pip install --upgrade pandas
