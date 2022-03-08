@@ -23,5 +23,6 @@ RUN conda update -n base -c defaults conda -y \
 # RUN conda install -y tensorflow keras pydot matplotlib autopep8 ipykernel beautifulsoup4 lxml pillow \
 #  && conda clean -a
 
-RUN pip install raiwidgets \
+RUN conda install -c conda-forge shap \
+  && pip install raiwidgets \
   && pip install --upgrade pandas
