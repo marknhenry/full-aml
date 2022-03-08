@@ -8,7 +8,7 @@ RUN apt-get update  \
     && apt-get install -yq tzdata \
     && ln -fs /usr/share/zoneinfo/Asia/Dubai /etc/localtime \
     && dpkg-reconfigure -f noninteractive tzdata \
-    && apt-get install -y wget unzip git  \
+    && apt-get install -y wget unzip git build-essential sudo \
     && rm -rf /var/lib/apt/lists/*
 
 # RUN wget \
