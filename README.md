@@ -8,7 +8,7 @@
 ``` bash 
 docker stop agitated_darwin # stop container
 docker rm agitated_darwin # remove container
-docker build -t "rai-demo:v1" . # Build the image from Dockerfile
-docker run -it -d --name agitated_darwin "rai-demo:v1" # Run container
+docker build -t "aml-demo:v1" . # Build the image from Dockerfile
+docker run -it -d --name agitated_darwin "aml-demo:v1" # Run container
 docker exec -it agitated_darwin /bin/bash # Log into container
 ```
